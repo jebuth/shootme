@@ -2,172 +2,13 @@ __author__ = 'Justin'
 
 import pygame
 import time
+import Player
+import Bullet
+import Enemy
 from colors import *
 
 spriteHeight = 64
 spriteWidth = 64
-
-class Player(pygame.sprite.Sprite):
-    def __init__(self, color=white, width=spriteWidth, height=spriteHeight):
-        super(Player, self).__init__()
-
-        self.explosion = pygame.mixer.Sound("sounds/explosion.wav")
-        self.image = pygame.Surface((width, height))
-        self.image.fill(color)
-        self.rect = self.image.get_rect()
-        self.health = 1
-
-    def setHealth(self, value):
-        self.health = value
-        self.explosion.play()
-        if self.health <= 0:
-            self.kill()
-
-    def destroy(self):
-        self.kill()
-
-    def getHealth(self):
-        return self.health
-
-    def set_position(self, x, y):
-        self.rect.x = x
-        self.rect.y = y
-
-    def set_image(self, filename=None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-            self.rect = self.image.get_rect()
-
-    def update_image(self, filename = None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-
-
-    def update(self, loopCount):
-        if loopCount % 9 == 0:
-            self.image = pygame.image.load("img/hero1Thrust.png")
-        else:
-            self.image = pygame.image.load("img/hero1Thrust2.png")
-
-    def getX(self):
-        return self.rect.x
-
-    def getY(self):
-        return self.rect.y
-
-class Bullet(pygame.sprite.Sprite):
-    def __init__(self, color=white, width=spriteWidth, height=spriteHeight):
-        super(Bullet, self).__init__()
-
-        self.image = pygame.Surface((width, height))
-        self.image.fill(color)
-        self.rect = self.image.get_rect()
-
-
-    def set_position(self, x, y):
-        self.rect.x = x
-        self.rect.y = y
-
-    def set_image(self, filename = None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-            self.rect = self.image.get_rect()
-
-    def update_image(self, filename = None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-
-    def checkCollision(self, object1, object2, spriteWidth=spriteWidth, spriteHeight=spriteHeight):
-        if (object1.getX() >= object2.getX() and object1.getX() <= (object2.getX() + spriteWidth)) and \
-                (object1.getY() >= object2.getY() and object1.getY() <= (object2.getY() + spriteHeight)):
-            return True
-        return False
-
-    def update(self, type):
-        if type == "player":
-            self.rect.y -= 10
-        elif type == "enemy":
-            self.rect.y += 10
-
-    def getX(self):
-        return self.rect.x
-
-    def getY(self):
-        return self.rect.y
-
-    def destroy(self):
-        self.rect.x = -1000
-        self.rect.y = -1000
-        self.kill()
-
-class Enemy(pygame.sprite.Sprite):
-    def __init__(self, color=white, width=spriteWidth, height=spriteHeight):
-        super(Enemy, self).__init__()
-
-        self.image = pygame.Surface((width, height))
-        self.image.fill(color)
-        self.rect = self.image.get_rect()
-        self.health = 1
-        self.index = 0
-        self.spriteCounter = 0
-
-        self.explosion = pygame.mixer.Sound("sounds/explosion.wav")
-
-    def set_position(self, x, y):
-        self.rect.x = x
-        self.rect.y = y
-
-    def set_image(self, filename=None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-            self.rect = self.image.get_rect()
-
-    def set_rect(self, width, height):
-        self.image = pygame.Surface((width, height))
-        self.rect = self.image.get_rect
-
-    def update_image(self, filename=None):
-        if (filename != None):
-            self.image = pygame.image.load(filename)
-
-    def checkCollision(self, object1, object2, spriteWidth=spriteWidth, spriteHeight=spriteHeight):
-        if (object1.getX() >= object2.getX() and object1.getX() <= (object2.getX() + spriteWidth)) and \
-                (object1.getY() >= object2.getY() and object1.getY() <= (object2.getY() + spriteHeight)):
-            return True
-        return False
-
-    def setSpriteCounter(self, value):
-        self.spriteCounter = value
-
-    def getSpriteCounter(self):
-        return self.spriteCounter
-
-    def set_Health(self, value):
-        self.health = value
-
-    def get_Health(self):
-        return self.health
-
-    def getX(self):
-        return self.rect.x
-
-    def getY(self):
-        return self.rect.y
-
-    def decrement_Health(self):
-        self.explosion.play()
-        self.health -= 2
-
-    def enemyDead(self):
-        if self.health < 0:
-            return True
-        return False
-
-    def destroy(self):
-        #move rect out of window
-        self.rect.x = -500
-        self.rect.y = -500
-        self.kill()
 
 class Background(pygame.sprite.Sprite):
     def __init__(self, color=white, width=spriteWidth, height=spriteHeight):
@@ -241,17 +82,17 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
     bulletGroup = pygame.sprite.Group()
     enemyBulletGroup = pygame.sprite.Group()
     enemyGroup = pygame.sprite.Group()
-    player = Player()
+    player = Player.Player()
     background = Background()
     background2 = Background()
     exitScreen = Background()
     startMenu = Background()
-    missile = Bullet()
-    missile2 = Bullet()
-    enemyMissile = Bullet()
-    enemyMissile2 = Bullet()
+    missile = Bullet.Bullet()
+    missile2 = Bullet.Bullet()
+    enemyMissile = Bullet.Bullet()
+    enemyMissile2 = Bullet.Bullet()
     playerFire = pygame.mixer.Sound("sounds/fire.wav")
-    enemy = Enemy()
+    enemy = Enemy.Enemy()
 
     background.set_image("img/starfield2.png")
     background2.set_image("img/starfield2.png")
@@ -259,7 +100,7 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
     startMenu.set_image("img/startMenu.png")
     player.set_image("img/hero1Thrust.png")
     playerImageList = ["img/hero1Thrust.png", "img/hero1Thrust2.png"]
-    enemy.set_image("img/lightenemy2.png")
+    enemy.set_image("img/lightenemy3.png")
 
     deathAnimation = []
     deathAnimation.append("img/lightenemy3Death1.png")
@@ -314,16 +155,14 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
                     if event.key == pygame.K_c:
                         gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, playerWidth, playerHeight, clock, fps, startMenuLoop)
 
-
-        background.set_position(0, y-702)
+        background.set_position(0, y-windowHeight)
         background2.set_position(0, y)
 
         loopCount += 1
 
         y += 4
-        if y >= 702:
+        if y >= windowHeight:
             y = 0
-
 
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
@@ -387,12 +226,12 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
                 playerFire.play()
                 missile1X = playerXLocation+8
                 missile1Y = playerYLocation+4
-                missile = Bullet()
+                missile = Bullet.Bullet()
                 missile.update_image("img/playerMissile.png")
                 missile.set_position(missile1X, missile1Y)
                 missile2X = playerXLocation+32
                 missile2Y = playerYLocation+4
-                missile2 = Bullet()
+                missile2 = Bullet.Bullet()
                 missile2.update_image("img/playerMissile.png")
                 missile2.set_position(missile2X, missile2Y)
 
@@ -412,7 +251,7 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
         if enemyExists == False:
             enemyArmy = []
             for i in range(0, waveNumber, 1):
-                enemyArmy.append(Enemy())
+                enemyArmy.append(Enemy.Enemy())
             for enemy in enemyArmy:
                 if boss:
                     enemy.set_Health(100)
@@ -430,9 +269,9 @@ def gameLoop(windowWidth, windowHeight, gameDisplay, playerMovedDistance, player
 
         else:
             for enemy in enemyGroup:
-                if loopCount % 200  == 0:
-                    enemyMissile = Bullet()
-                    enemyMissile2 = Bullet()
+                if loopCount % 30  == 0:
+                    enemyMissile = Bullet.Bullet()
+                    enemyMissile2 = Bullet.Bullet()
 
                     if boss == False:
                         enemyMissile.update_image("img/enemyMissile.png")

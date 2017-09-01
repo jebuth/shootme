@@ -2,46 +2,42 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="13818fe2-f56c-4c6b-a377-cdaf4d5b1dba" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/sounds/afterlife.mp3" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/boss.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bossDamaged.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/bossMissile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/enemyMissile.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/gameOver.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/img/startMenu.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Bullet.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Enemy.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Player.py" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\background.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\background_light.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\enemy1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\enemy1_light.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\enemy2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\enemyDeath.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\explosion.wav" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\fire.wav" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero1Left.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero1Right.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero1Thrust.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\hero1Thrust2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Damaged.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death1.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death3.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death4.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death5.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death6.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\lightenemy3Death7.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\orion.jpg" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\playerMissile.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\pobrane.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\song.mp3" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\song.wav" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\starfield2.png" afterPath="" />
+      <change type="DELETED" beforePath="E:\Users\Justin\Desktop\Projects\shootme\Prototype\test.wav" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\background.jpg" afterPath="$PROJECT_DIR$/img/background.jpg" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\background_light.jpg" afterPath="$PROJECT_DIR$/img/background_light.jpg" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\enemy1.png" afterPath="$PROJECT_DIR$/img/enemy1.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\enemy1_light.png" afterPath="$PROJECT_DIR$/img/enemy1_light.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\enemy2.png" afterPath="$PROJECT_DIR$/img/enemy2.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\enemyDeath.png" afterPath="$PROJECT_DIR$/img/enemyDeath.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\explosion.wav" afterPath="$PROJECT_DIR$/sounds/explosion.wav" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\fire.wav" afterPath="$PROJECT_DIR$/sounds/fire.wav" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero.png" afterPath="$PROJECT_DIR$/img/hero.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero1.png" afterPath="$PROJECT_DIR$/img/hero1.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero1Left.png" afterPath="$PROJECT_DIR$/img/hero1Left.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero1Right.png" afterPath="$PROJECT_DIR$/img/hero1Right.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero1Thrust.png" afterPath="$PROJECT_DIR$/img/hero1Thrust.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\hero1Thrust2.png" afterPath="$PROJECT_DIR$/img/hero1Thrust2.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy1.png" afterPath="$PROJECT_DIR$/img/lightenemy1.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy2.png" afterPath="$PROJECT_DIR$/img/lightenemy2.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3.png" afterPath="$PROJECT_DIR$/img/lightenemy3.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Damaged.png" afterPath="$PROJECT_DIR$/img/lightenemy3Damaged.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death1.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death1.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death2.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death2.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death3.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death3.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death4.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death4.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death5.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death5.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death6.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death6.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\lightenemy3Death7.png" afterPath="$PROJECT_DIR$/img/lightenemy3Death7.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\orion.jpg" afterPath="$PROJECT_DIR$/img/orion.jpg" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\playerMissile.png" afterPath="$PROJECT_DIR$/img/playerMissile.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\pobrane.png" afterPath="$PROJECT_DIR$/img/pobrane.png" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\song.mp3" afterPath="$PROJECT_DIR$/sounds/song.mp3" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\song.wav" afterPath="$PROJECT_DIR$/sounds/song.wav" />
-      <change type="MOVED" beforePath="E:\Users\Justin\Desktop\shootme\shootme\Prototype\starfield2.png" afterPath="$PROJECT_DIR$/img/starfield2.png" />
     </list>
     <ignored path="Prototype.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,8 +64,8 @@
       <file leaf-file-name="Source.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Source.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.23728813" vertical-offset="5790" max-vertical-offset="10149">
-              <caret line="348" column="55" selection-start-line="348" selection-start-column="55" selection-end-line="348" selection-end-column="55" />
+            <state vertical-scroll-proportion="0.48022598" vertical-offset="4386" max-vertical-offset="7412">
+              <caret line="273" column="51" selection-start-line="273" selection-start-column="51" selection-end-line="273" selection-end-column="51" />
               <folding>
                 <element signature="e#23#36#0" expanded="true" />
               </folding>
@@ -77,20 +73,75 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="enemy1.png" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/img/enemy1.png">
+      <file leaf-file-name="Enemy.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Enemy.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+              <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Bullet.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Bullet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Player.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightenemy2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy2.png">
           <provider selected="true" editor-type-id="images">
             <state />
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="colors.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/colors.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="21" />
-              <folding />
-            </state>
+      <file leaf-file-name="lightenemy1.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy1.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightenemy3.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy3.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightenemy3Death2.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy3Death2.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightenemy3Death3.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy3Death3.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lightenemy3Death4.png" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/img/lightenemy3Death4.png">
+          <provider selected="true" editor-type-id="images">
+            <state />
           </provider>
         </entry>
       </file>
@@ -103,6 +154,9 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/colors.py" />
+        <option value="$PROJECT_DIR$/Player.py" />
+        <option value="$PROJECT_DIR$/Bullet.py" />
+        <option value="$PROJECT_DIR$/Enemy.py" />
         <option value="$PROJECT_DIR$/Source.py" />
       </list>
     </option>
@@ -137,7 +191,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -153,6 +207,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -173,7 +228,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -390,17 +444,17 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1456" height="876" extended-state="0" />
+    <frame x="-8" y="-8" width="1456" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.17291667" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14930555" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23337679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23337679" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -435,65 +489,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/img/hero.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/enemy1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/enemy2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/hero.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Source.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#23#36#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/colors.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="0">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/img/enemy1.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/img/enemy2.png">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -786,18 +781,69 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.wav">
+    <entry file="file://$PROJECT_DIR$/img/lightenemy3Death1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy3Death2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy3Death3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy3Death4.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy1.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy2.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/img/lightenemy3.png">
+      <provider selected="true" editor-type-id="images">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6409">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1003">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Bullet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="16" selection-end-line="5" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Enemy.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1377">
+          <caret line="75" column="19" selection-start-line="75" selection-start-column="19" selection-end-line="75" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Source.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.23728813" vertical-offset="5790" max-vertical-offset="10149">
-          <caret line="348" column="55" selection-start-line="348" selection-start-column="55" selection-end-line="348" selection-end-column="55" />
+        <state vertical-scroll-proportion="0.48022598" vertical-offset="4386" max-vertical-offset="7412">
+          <caret line="273" column="51" selection-start-line="273" selection-start-column="51" selection-end-line="273" selection-end-column="51" />
           <folding>
             <element signature="e#23#36#0" expanded="true" />
           </folding>
